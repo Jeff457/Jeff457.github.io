@@ -7,19 +7,20 @@
   </head>
 
 <body>
+  <a name="home"></a>
   <!-- Navigation Pane -->
-  <div class="nav">
+  <nav class="navbar">
     <div class="container">
-      <ul class="pull-left">
-        <li><a href="#">Jeff Stanton</a></li>
-      </ul>
-      <ul class="pull-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#nav-about">About</a></li>
-        <li><a href="#nav-work">Portfolio</a></li>
-        <li><a href="#nav-connect">Contact</a></li>
-    </div>
-  </div>
+        <ul class="pull-left">
+          <li>Jeff Stanton</li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#home" class="home">Home</a></li>
+          <li><a href="#about" class="nav-about">About</a></li>
+          <li><a href="#work" class="nav-work">Portfolio</a></li>
+          <li><a href="#connect" class="nav-connect">Contact</a></li>
+      </div>
+      </nav>
 
   <!-- Header -->
   <div class="jumbotron">
@@ -32,55 +33,64 @@
   <!-- About, Work, & Contact -->
   <div class="container">
 
-  <a name="nav-about"></a>
+    <a name = "nav-about"></a>
     <div class="about">
       <h3>ABOUT ME</h3>
       <p>Jeff Stanton received his degree in Computer Science from BLANK in BLANK. Currently resides in California.</p>
     </div>
 
-  <a name="nav-work"></a>
+      <a name="nav-work"></a>
     <div class="portfolio">
       <h3>WORK</h3>
       <div class="row">
-        <!-- Flappy Bird Project -->
+        
+        <div class="project-detail">
+           <div class="flappy-project-detail">
+             <p>Flappy Bird Project</p>
+          </div>
+          
+          <div class="calculator-project-detail">
+              <p>Calculator Project</p>
+            </div>
+          
+            <div class="text-project-detail">
+                <p>Text Editor Project</p>
+            </div>
+        </div>
+        
         <div class="project">
+        <!-- Flappy Bird Project -->
+        <div class="flappy-project">
           <div class="col-md-4">
             <div class="thumbnail">
               <img src="#">
             </div>
           </div>
-          <div class="project-detail">
-            <p>Flappy Bird Project</p </div>
-          </div>
+        </div>
 
           <!-- Calculator Project -->
-          <div class="project">
+          <div class="calculator-project">
             <div class="col-md-4">
               <div class="thumbnail">
                 <img src="#">
               </div>
-            </div>
-            <div class="project-detail">
-              <p>Calculator Project</p>
             </div>
           </div>
 
           <!-- Text Editor Project -->
-          <div class="project">
+          <div class="text-project">
             <div class="col-md-4">
               <div class="thumbnail">
                 <img src="#">
               </div>
             </div>
-            <div class="project-detail">
-                <p>Text Editor Project</p>
-            </div>
           </div>
+        </div>
 
         </div>
       </div>
 
-  <a name="nav-connect"></a>
+    <a name="nav-connect"></a>
       <div class="contact">
         <h3>CONNECT</h3>
         <div class="row">
@@ -93,9 +103,10 @@
         </div>
       </div>
     </div>
+    
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
