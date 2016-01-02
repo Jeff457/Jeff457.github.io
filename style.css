@@ -1,14 +1,41 @@
-.nav a {
-  color: #5a5a5a;
-  padding: 14px 10px;
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-.nav li {
-  display: inline;
+.navbar a {
+  color: #5a5a5a;
+  padding: 14px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.jeff:hover {
+  color: black;
+}
+
+.home:hover {
+  color: black;
+}
+
+.nav-about:hover {
+  color: black;
+}
+
+.nav-work:hover {
+  color: black;
+}
+
+.nav-connect:hover {
+  color: black;
 }
 
 .jumbotron {
-  height: 500px;
+  height: 800px;
   background: #65beb4;
   color: #fff;
   background-size: cover;
@@ -28,16 +55,52 @@
 }
 .about {
   border-bottom: 1px solid #dbdbdb;
+  height: 200px;
 }
 .portfolio {
   border-bottom: 1px solid #dbdbdb;
+  height: 200px;
 }
 
 .project-detail {
   background: #65beb4;
   color: #fff;
-  position: absolute;
-  left: -285px;
+  position: relative;
+}
+
+.flappy-project-detail {
+  display: none;
+}
+
+.calculator-project-detail {
+  display: none;
+}
+
+.text-project-detail {
+  display: none;
+}
+
+.flappy-project {
+  opacity: 0.5;
+}
+.flappy-project:hover {
+  opacity: 1;
+}
+
+.calculator-project {
+  opacity: 0.5;
+}
+
+.calculator-project:hover {
+  opacity: 1;
+}
+
+.text-project {
+  opacity: 0.5;
+}
+
+.text-project:hover {
+  opacity: 1;
 }
 
 body {
