@@ -1,6 +1,7 @@
 .navbar {
   margin-top: 20px;
   margin-bottom: 0px;
+  border: 20px solid #fff;
 }
 
 .navbar a {
@@ -12,6 +13,7 @@
 
 .navbar li {
   display: inline-block;
+  font-size: 18px;
 }
 
 .jeff:hover {
