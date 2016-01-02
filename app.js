@@ -1,21 +1,34 @@
 var main = function() {
-  $('.project').click(function() {
- $('.project-detail').animate({
-    left: "-100"
- }, 500);
-    $('body').animate({
-  left: "285"
-}, 500);
+  $('.flappy-project').click(function() {
+    $('.project-detail').children().hide();
+     $('.flappy-project-detail').animate({
+      'marginLeft': "100px"
+    });
+    $('.flappy-project-detail').show(0);
+ $('.flappy-project-detail').addClass('animated fadeInDown');
+  });
     
-    $('body').click(function() {
-      $('.project-detail').animate({
-        left: "-285"
-      }, 500);
-      $('body').animate({
-        left: "0"
-      }, 500);
-    })
-});
+    $('.calculator-project').click(function() {
+      $('.project-detail').children().hide();
+      $('.calculator-project-detail').animate({
+        'marginLeft': "500px"
+      });
+      $('.calculator-project-detail').show(0);
+      $('.calculator-project-detail').addClass('animated fadeInDown');
+    });
+  
+  $('.text-project').click(function() {
+    $('.project-detail').children().hide();
+    $('.text-project-detail').animate({
+      'marginLeft': "900px"
+    });
+    $('.text-project-detail').show(0);
+    $('.text-project-detail').addClass('animated fadeInDown');
+  });
+    
+    $('.project-detail').click(function() {
+       $('.project-detail').children().delay(500).hide(0);
+    });
 };
 
 $(document).ready(main);
