@@ -1,0 +1,45 @@
+.nav a {
+  color: #5a5a5a;
+  padding: 14px 10px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  height: 500px;
+  background: #65beb4;
+  color: #fff;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+}
+.about {
+  border-bottom: 1px solid #dbdbdb;
+}
+.portfolio {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.project-detail {
+  background: #65beb4;
+  color: #fff;
+  position: absolute;
+  left: -285px;
+}
+
+body {
+  position: absolute;
+}
