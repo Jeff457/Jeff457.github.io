@@ -3,9 +3,10 @@
 }
 
 .navbar {
-  margin-top: 20px;
   margin-bottom: 0px;
-  border: 20px solid #fff;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .navbar a {
@@ -13,19 +14,12 @@
   padding: 14px 10px;
   text-decoration: none;
   position: relative;
+  font-size: 15px;
 }
 
 .navbar li {
   display: inline-block;
   font-size: 18px;
-}
-
-.jeff:hover {
-  color: black;
-}
-
-.home:hover {
-  color: black;
 }
 
 .nav-about:hover {
@@ -42,9 +36,11 @@
 
 .jumbotron {
   height: 500px;
-  background: #65beb4;
+  width: auto;
+  background: url(http://i.imgur.com/5BdJOMd.jpg) no-repeat;
   color: #fff;
   background-size: cover;
+  text-align: center;
 }
 
 .jumbotron .container {
@@ -59,11 +55,15 @@
 .jumbotron p {
   font-size: 20px;
 }
+
 .about {
+  text-align: center;
   border-bottom: 1px solid #dbdbdb;
   height: 200px;
 }
+
 .portfolio {
+  text-align: center;
   border-bottom: 1px solid #dbdbdb;
   height: 200px;
 }
@@ -86,9 +86,14 @@
   display: none;
 }
 
+.project {
+  margin: 0px 20px 0px 20px;
+}
+
 .flappy-project {
   opacity: 0.5;
 }
+
 .flappy-project:hover {
   opacity: 1;
 }
@@ -111,10 +116,15 @@
 
 body {
   position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact {
-  background-size: cover;
+  text-align: center;
 }
 
 .email {
