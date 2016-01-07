@@ -1,1 +1,146 @@
+body {
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
 
+#page {
+  margin: auto;
+  position: relative;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #5a5a5a;
+  padding: 14px 10px;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.nav-about:hover {
+  color: black;
+}
+
+.nav-work:hover {
+  color: black;
+}
+
+.nav-connect:hover {
+  color: black;
+}
+
+/* Header */
+.jumbotron {
+  height: 500px;
+  width: 100%;
+  background: url(http://i.imgur.com/5BdJOMd.jpg) no-repeat;
+  color: #fff;
+  background-size: cover;
+  text-align: center;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+}
+
+/* Section about */
+.about {
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  height: 200px;
+}
+
+/* Section porfolio */
+.portfolio {
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  height: 300px;
+}
+
+.project-detail {
+  background: #65beb4;
+  color: #fff;
+  position: relative;
+}
+
+.flappy-project-detail {
+  display: none;
+}
+
+.calculator-project-detail {
+  display: none;
+}
+
+.text-project-detail {
+  display: none;
+}
+
+#flappy-project {
+  opacity: 0.5;
+  padding-right: 20px;
+}
+
+#flappy-project:hover {
+  opacity: 1;
+}
+
+#calculator-project {
+  opacity: 0.5;
+  padding: 0 20px 0 20px;
+}
+
+#calculator-project:hover {
+  opacity: 1;
+}
+
+#editor-project {
+  opacity: 0.5;
+  padding: 0 20px 0 20px;
+}
+
+#editor-project:hover {
+  opacity: 1;
+}
+
+/* Section contact */
+.contact {
+  text-align: center;
+}
+
+.email {
+  display: inline-block;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  margin: 5px;
+  padding: 0px;
+}
