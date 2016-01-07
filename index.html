@@ -6,11 +6,11 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
 <body>
-  <a name="home"></a>
+  <div id="page">
   <!-- Navigation Pane -->
   <nav class="navbar">
         <ul>
@@ -28,22 +28,20 @@
 
   <!-- About, Work, & Contact -->
     <a name = "about"></a>
-    <div class="about">
+    <section class="about">
       <h3>ABOUT ME</h3>
       <br>
       <p>Jeff Stanton received his degree in Computer Science from BLANK in BLANK. Currently resides in California.</p>
-    </div>
+    </section>
 
       <a name="work"></a>
-    <div class="portfolio">
+    <section class="portfolio">
       <h3>WORK</h3>
-      <br><br>
-      <div class="row">
-        
+      <br>
         <div class="project-detail">
            <div class="flappy-project-detail">
              <p>Flappy Bird Project</p>
-          </div>
+           </div>
           
           <div class="calculator-project-detail">
               <p>Calculator Project</p>
@@ -53,41 +51,23 @@
                 <p>Text Editor Project</p>
             </div>
         </div>
+      <!-- End Project Detail -->
         
-        <div class="project">
+      <!-- Start Project Images -->
         <!-- Flappy Bird Project -->
-        <div class="flappy-project">
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <img src="#">
-            </div>
-          </div>
-        </div>
+      <div>
+			<img src="http://i.imgur.com/zgrFeWg.png?1" id="flappy-project" alt="Flappy Bird Clone"/>
 
           <!-- Calculator Project -->
-          <div class="calculator-project">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <img src="#">
-              </div>
-            </div>
-          </div>
+			<img src="#" alt="Calculator" id="calculator-project"/>
 
           <!-- Text Editor Project -->
-          <div class="text-project">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <img src="#">
-              </div>
-            </div>
-          </div>
+			<img src="#" alt="Text-Editor" id="editor-project"/>
         </div>
-
-        </div>
-      </div>
+    </section>
 
     <a name="connect"></a>
-      <div class="contact">
+      <section class="contact">
         <div class="container">
         <h3>CONNECT</h3>
         <h5 class="email">me@jeff-stanton.com</h5>
@@ -101,8 +81,9 @@
 	c31.268,0,46.289,22.071,46.289,61.614c0,39.546,0,144.182,0,144.182h84.605c0,0,0-100.344,0-173.915
 	c0-73.571-41.689-109.131-99.935-109.131s-82.769,45.369-82.769,45.369v-36.99H279.195z"></path></svg></a>
             </div></div>
-    </div>
-        </div>
+    </section>
+    
+    </div> <!-- end div id page -->
     
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
