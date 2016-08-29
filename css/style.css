@@ -7,6 +7,15 @@ body {
   background-color: #f4f5f5;
 }
 
+.fa-bars {
+  margin-top: 50px;
+}
+
+.console {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
 hr {
   border-color: #222;
 }
