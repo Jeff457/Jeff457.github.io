@@ -1,34 +1,28 @@
-var main = function() {
-  $('.flappy-project').click(function() {
-    $('.project-detail').children().hide();
-     $('.flappy-project-detail').animate({
-      'marginLeft': "-800px"
-    });
-    $('.flappy-project-detail').show(0);
- $('.flappy-project-detail').addClass('animated fadeInDown');
-  });
-    
-    $('.calculator-project').click(function() {
-      $('.project-detail').children().hide();
-      $('.calculator-project-detail').animate({
-        'marginLeft': "0px"
-      });
-      $('.calculator-project-detail').show(0);
-      $('.calculator-project-detail').addClass('animated fadeInDown');
-    });
-  
-  $('.text-project').click(function() {
-    $('.project-detail').children().hide();
-    $('.text-project-detail').animate({
-      'marginLeft': "800px"
-    });
-    $('.text-project-detail').show(0);
-    $('.text-project-detail').addClass('animated fadeInDown');
-  });
-    
-    $('.project-detail').click(function() {
-       $('.project-detail').children().delay(500).hide(0);
-    });
-};
+var caption = "Computer Science student from University of California Irvine. "
+var captionLength = 0;
 
-$(document).ready(main);
+
+$(document).ready(function() {
+    setInterval ('cursorAnimation()', 600);
+    captionEl = $('#caption');
+    
+    type();
+});
+
+function type() {
+    captionEl.html(caption.substr(0, captionLength++));
+    if(captionLength < caption.length+1) {
+        setTimeout('type()', 50);
+    } else {
+        captionLength = 0;
+        caption = '';
+    }
+}
+
+function cursorAnimation() {
+    $('#cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+}
