@@ -51,6 +51,10 @@ a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
+ul {
+  font-size: 25px;
+}
+
 .bounce {
   display: inline-block;
   position: relative;
