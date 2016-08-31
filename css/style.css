@@ -2,18 +2,69 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-weight:400;
+  font-weight: 400;
   color: #222;
   background-color: #f4f5f5;
+  position: relative;
+  right: 0;
+  margin: 0;
+  transition: right 0.35s ease-out;
 }
 
 .fa-bars {
   margin-top: 50px;
 }
 
+#site-intro {
+  height: 100vh;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: white;
+  text-align: left;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  right: -200px;
+  transition: right 0.35s ease-out;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc
+}
+
+.menu ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+}
+
+.icon-close {
+  text-align: center;
+  margin-right: 60px;
+  padding-top: 46px;
+}
+
+#caption {
+  margin-bottom: 100%;
+}
+
+.scroll {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
 .console {
   font-size: 30px;
-  margin-bottom: 50px;
 }
 
 hr {
