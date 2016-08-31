@@ -12,9 +12,23 @@
 
 <body>
   
-  <div class="container">
+  <div class="container" id="home">
     
-    <i class="fa fa-bars fa-3x fa-pull-right" aria-hidden="true"></i>
+    <i class="fa fa-bars fa-3x fa-pull-right" id="toggle-menu" aria-hidden="true"></i>
+    <div class="container" id="site-intro">
+    <div class="menu">
+      <div class="icon-close">
+        <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+      </div>
+      <p class="lead">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#projects"><li>Projects</li></a>
+        <a href="#resume"><li>Resume</li></a>
+      </ul>
+      </p>
+    </div>  <!-- end menu -->
 
     <h1>Hi, I'm Jeff.</h1>
     <hr>
@@ -22,21 +36,23 @@
     <span id="caption"></span><span id="cursor">|</span>
 </p>
     
-    <div class="text-center">
+    <div class="scroll">
       <i class="fa fa-chevron-circle-down fa-3x bounce" id="circle" aria-hidden="true"></i>
+  </div>
+    
     </div>
     
-    <h1>Skills</h1>
+    <h1 id="skills">Skills</h1>
     <hr>
     <p class="lead">
       <ul>
-        <li>C / C++</li>
+        <li>C/C++</li>
         <li>Java</li>
         <li>JavaScript / jQuery</li>
       </ul>
     </p>
     
-    <h1>Projects</h1>
+    <h1 id="projects">Projects</h1>
     <hr>
     <!-- START THE FEATURETTES -->
       <div class="row featurette">
