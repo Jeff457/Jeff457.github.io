@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -13,6 +18,9 @@ body {
 
 .fa-bars {
   margin-top: 50px;
+  position: absolute;
+  top: 0px;
+  right: 150px;
 }
 
 #site-intro {
@@ -53,14 +61,21 @@ body {
   padding-top: 46px;
 }
 
-#caption {
-  margin-bottom: 100%;
-}
-
 .scroll {
   text-align: center;
-  display: block;
   position: relative;
+  height: 100%;
+  top: 100%;
+}
+
+.scroll i {
+  position: absolute; 
+  height: 100px;
+  margin-top:-350px;
+}
+
+#circle {
+  vertical-align: bottom;
 }
 
 .console {
