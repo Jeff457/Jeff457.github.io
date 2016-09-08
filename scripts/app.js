@@ -77,9 +77,6 @@ function check_if_left_in_view() {
     if ( (elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) ) {
       $element.addClass('animated fadeInLeft');
     }
-    else {
-      $element.removeClass('animated fadeInLeft');
-    }
   });
 }  // end check_if_skills_in_view
 
@@ -97,9 +94,6 @@ function check_if_right_in_view() {
     //check to see if this current container is within viewport
     if ( (elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) ) {
       $element.addClass('animated fadeInRight');
-    }
-    else {
-      $element.removeClass('animated fadeInRight');
     }
   });
 }  // end check_if_quotes_in_view
