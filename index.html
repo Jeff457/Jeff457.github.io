@@ -1,17 +1,21 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Personal Website</title>
+
+    <!-- Bootstrap -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-<body>
-  
   <body>
   <div class="container" id="home">
     
@@ -33,11 +37,11 @@
       </p>
     </div>  <!-- end menu -->
 
-    <h1>Hi, I'm Jeff.</h1>
+    <h1 class="animated fadeInDown">Hi, I'm Jeff.</h1>
     <hr>
     <p class="console">
     <span id="caption"></span><span id="cursor">|</span>
-</p>
+    </p>
     
     <div class="scroll">
       <i class="fa fa-chevron-circle-down fa-3x bounce" id="circle" aria-hidden="true"></i>
@@ -48,8 +52,8 @@
     <h1 id="skills">Skills</h1>
     <hr>
     <p class="lead">
-      <ul>
-        <li>C/C++</li>
+      <ul class="animation-left">
+        <li>C / C++</li>
         <li>Java</li>
         <li>JavaScript / jQuery</li>
       </ul>
@@ -60,11 +64,11 @@
     <!-- START THE FEATURETTES -->
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Random Quote Machine. <span class="text-muted">Using the <a href="http://forismatic.com/en/api/" target="_blank">forismatic api</a>.</span></h2>
-          <p class="lead">A responsive web app that uses the forismatic api to display quotes and allows users to post their favorites on Facebook or Twitter.</p>
+          <h2 class="featurette-heading animation-right">Random Quote Machine. <span class="text-muted">Using the <a href="http://forismatic.com/en/api/" target="_blank">forismatic api</a>.</span></h2>
+          <p class="lead animation-right">A responsive web app that uses the forismatic api to display quotes and allows users to post their favorites on Facebook or Twitter.</p>
         </div>
         <div class="col-md-5">
-          <a href="https://codepen.io/Jeff457/full/pgPyWL/" target="_blank"><img class="featurette-image img-responsive center-block" id="quote-machine" data-src="holder.js/500x500/auto" alt="Random Quote Machine" src="http://i.imgur.com/JpBsHUo.png"></a>
+          <a href="https://codepen.io/Jeff457/full/pgPyWL/" target="_blank"><img class="featurette-image img-responsive center-block animation-right" id="quote-machine" data-src="holder.js/500x500/auto" alt="Random Quote Machine" src="http://i.imgur.com/JpBsHUo.png"></a>
         </div>
       </div>
 
@@ -72,11 +76,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">JavaScript Calculator. <span class="text-muted">Responsive web app.</span></h2>
-          <p class="lead">A responsive and simple calculator styled using CSS.</p>
+          <h2 class="featurette-heading animation-left">JavaScript Calculator. <span class="text-muted animation-left">Responsive web app.</span></h2>
+          <p class="lead animation-element animation-left">A responsive and simple calculator styled using CSS.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <a href="https://codepen.io/Jeff457/full/jAjwjK/" target="_blank"><img class="featurette-image img-responsive center-block" id="calculator" data-src="holder.js/500x500/auto" alt="JavaScript Calculator" src="http://i.imgur.com/fUHb7o9.png"></a>
+          <a href="https://codepen.io/Jeff457/full/jAjwjK/" target="_blank"><img class="featurette-image img-responsive center-block animation-left" id="calculator" data-src="holder.js/500x500/auto" alt="JavaScript Calculator" src="http://i.imgur.com/fUHb7o9.png"></a>
         </div>
       </div>
 
@@ -84,11 +88,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Flappy Bird Clone. <span class="text-muted">Written in Java using the <a href="https://www.lwjgl.org/" target="_blank">LWJGL</a>.</span></h2>
-          <p class="lead">A fully-functioning, single-level Flappy Bird clone using OpenGL.</p>
+          <h2 class="featurette-heading animation-right">Flappy Bird Clone. <span class="text-muted">Written in Java using the <a href="https://www.lwjgl.org/" target="_blank">LWJGL</a>.</span></h2>
+          <p class="lead animation-right">A fully-functioning, single-level Flappy Bird clone using OpenGL.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" id="flappy" data-src="holder.js/500x500/auto" src="http://i.imgur.com/zgrFeWg.png?1" alt="Flappy Bird">
+          <a href="https://github.com/Jeff457/Flappy" target="_blank"><img class="featurette-image img-responsive center-block animation-right" id="flappy" data-src="holder.js/500x500/auto" src="http://i.imgur.com/zgrFeWg.png?1" alt="Flappy Bird"></a>
         </div>
       </div>
       <!-- /END THE FEATURETTES -->
@@ -101,10 +105,5 @@
     
   </div>
   <!-- end container -->
-    
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="scripts/app.js"></script>
 </body>
-
 </html>
