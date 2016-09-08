@@ -42,6 +42,23 @@ $(document).ready(function() {
   
 });  // end document ready
 
+// checks for links that look like <a href="#">, grabs the url 
+// path, then smoothly transitions to the corresponding section
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });  // end click event
+});  // end scrolling function
+
 // function to animate introduction text
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
@@ -95,7 +112,6 @@ function check_if_right_in_view() {
     
     //check to see if this current container is within viewport
     if ( (elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) ) {
-      $('.skills-list li').css('opacity', '1');
       $('.featurette').css('opacity', '1');
       $element.addClass('animated fadeInRight');
     }
