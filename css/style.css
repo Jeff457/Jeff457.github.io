@@ -20,11 +20,13 @@ body {
   margin-top: 50px;
   position: absolute;
   top: 0px;
-  right: 150px;
+  right: 10%;
 }
 
 #site-intro {
   height: 100vh;
+  width: 60vw;
+  margin: 0;
 }
 
 .menu {
@@ -61,6 +63,10 @@ body {
   padding-top: 46px;
 }
 
+h1 {
+  font-size: 70px;
+}
+
 #cursor {
   opacity: 0;
 }
@@ -88,10 +94,6 @@ body {
 
 hr {
   border-color: #222;
-}
-
-h1 {
-  font-size: 70px;
 }
 
 @media (min-width: 992px) {
