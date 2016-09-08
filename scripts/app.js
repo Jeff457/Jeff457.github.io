@@ -75,6 +75,8 @@ function check_if_left_in_view() {
     
     //check to see if this current container is within viewport
     if ( (elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) ) {
+      $('.skills-list li').css('opacity', '1');
+      $('.featurette').css('opacity', '1');
       $element.addClass('animated fadeInLeft');
     }
   });
@@ -93,6 +95,8 @@ function check_if_right_in_view() {
     
     //check to see if this current container is within viewport
     if ( (elementBottomPosition >= windowTopPosition) && (elementTopPosition <= windowBottomPosition) ) {
+      $('.skills-list li').css('opacity', '1');
+      $('.featurette').css('opacity', '1');
       $element.addClass('animated fadeInRight');
     }
   });
