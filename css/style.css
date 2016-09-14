@@ -184,7 +184,7 @@ a:focus {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 50px;
   text-transform: uppercase;
 }
 
@@ -220,7 +220,7 @@ h1 {
 }
 
 .featurette-heading {
-    font-size: 50px;
+    font-size: 30px;
   }
 
 a:hover, a:visited, a:link, a:active {
