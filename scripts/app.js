@@ -10,54 +10,20 @@ var $window = $(window);
 $(document).ready(function() {
     setInterval ('cursorAnimation()', 600);
     captionEl = $('#caption');
-    button = $('#toggle-menu');
     setTimeout( type, 2000);
     $window.on('scroll resize', check_if_left_in_view);
     $window.on('scroll resize', check_if_right_in_view);
-    $window.trigger('scroll');
-  
-  // function animates the menu
-  $('#toggle-menu').click(function() {
-    
-    $('.menu').animate({
-      right: "0px"
-    }, 200);
-
-    $('body').animate({
-      right: "75px"
-    }, 100);
-    
-  });  // end open menu
-
-  /* Then push them back */
-  $('.icon-close').click(function() {
-    $('.menu').animate({
-      right: "-285px"
-    }, 200);
-
-    $('body').animate({
-      right: "0px"
-    }, 200);
-  });  //end close menu
   
 });  // end document ready
 
-// checks for links that look like <a href="#">, grabs the url 
-// path, then smoothly transitions to the corresponding section
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });  // end click event
-});  // end scrolling function
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
 
 // function to animate introduction text
 function type() {
@@ -117,3 +83,21 @@ function check_if_right_in_view() {
     }
   });
 }  // end check_if_quotes_in_view
+
+// Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    });
