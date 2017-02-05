@@ -1,4 +1,4 @@
-var caption = "Computer Science student from University of California Irvine. "
+var caption = "Computer Science student from UC Irvine. "
 var captionLength = 0;
 
 // cache reference to window and animation items
