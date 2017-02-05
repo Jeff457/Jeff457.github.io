@@ -16,6 +16,35 @@ body {
   transition: right 0.35s ease-out;
 }
 
+.social-links {
+  margin-left: 42%;
+}
+
+.fa:hover,
+.fa:focus:hover {
+  color: #222;
+}
+
+.social-links a{
+  text-align: center;
+	float: left;
+	width: 48px;
+	height: 48px;
+	border: 1px solid #909090;
+	border-radius: 100%;
+	margin-right: 7px; /*space between*/
+
+} 
+.social-links a i{
+	font-size: 30px;
+  line-height: 46px;
+	color: #909090;
+}
+
+hr {
+  border-color: #222;
+}
+
 .navbar-default {
   background-color: #f4f5f5;
   font-family: 'Raleway', sans-serif;
