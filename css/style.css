@@ -16,11 +16,6 @@ body {
   transition: right 0.35s ease-out;
 }
 
-hr {
-  border-color: #222;
-  border-width: 1px;
-}
-
 .navbar-default {
   background-color: #f4f5f5;
   font-family: 'Raleway', sans-serif;
@@ -129,9 +124,7 @@ header .header-content .header-content-inner h1 {
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
-  border-color: #F05F40;
-  border-width: 3px;
-  max-width: 50px;
+  max-width: 300px;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
