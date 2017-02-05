@@ -16,6 +16,13 @@ body {
   transition: right 0.35s ease-out;
 }
 
+hr {
+  color: black;
+}
+h5 {
+  font-size: 1.8em;
+}
+
 .navbar-default {
   background-color: #f4f5f5;
   font-family: 'Raleway', sans-serif;
