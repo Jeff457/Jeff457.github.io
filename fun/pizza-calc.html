@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pizza Calculator</title>
+
+    <!-- Bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/pizzacalcstyle.css">
+  </head>
+  <body>
+      <div class="container pizza-calc-container">
+        <div class="col-xs-1 col-md-1"></div>
+        
+        <div class="col-xs-10 col-md-10 pizza-calc-body">
+          <form id="calculate-pizza-value">
+            <div class="row pizza-title">
+              <h1>Pizza Calculator</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-1 col-md-1"></div>
+                <div class="col-xs-10 col-md-10 text">
+                    <p>
+                      Fill out the forms and it'll show you the pizza with the best value.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 col-md-1"></div>
+                <div class="col-xs-10 col-md-10 text">
+                    <p>If you're ordering from a chain, there's some sizes preloaded.  Just select the chain and you can choose from their available sizes.  You can also compare across different chains.</p>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-1 col-md-1"></div>
+              <div class="dropdown dropdown-chain-selection">
+                <button class="btn btn-default dropdown-toggle" type="button" id="pizza-chain" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">From a chain?<span class="caret"></span></button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                   <li><a href="javascript:void(0);" id="dominos">Dominos</a></li>
+                   <li><a href="javascript:void(0);" id="papa">Papa Johns</a></li>
+                   <li><a href="javascript:void(0);" id="hut">Pizza Hut</a></li>
+                   <li><a href="javascript:void(0);" id="compare">Compare Chains</a></li>
+                   <li><a href="javascript:void(0);" id="nvm">Custom</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row pizza-calc-header">
+              <div class="col-xs-2 col-md-2"></div>
+              <div class="col-xs-2 col-md-2">Price</div>
+              <div class="col-xs-2 col-md-2">Size</div>
+              <div class="col-xs-2 col-md-2">Value (in&#0178/$)</div>
+              <div class="col-xs-2 col-md-2">Cost ($/in&#0178)</div>
+            </div>
+
+            <div class="row pizza-calc-input">
+              <div class="col-xs-2 col-md-2 chain-button"></div>
+              <div class="col-xs-8 col-md-8">
+                <table class="table">
+                  <tr>
+                    <td><input type="text" class="pizza-input" id="price" name="price" placeholder="$"/></td>
+                    <td><input type="text" class="pizza-input" id="size" name="size" placeholder="inches"/></td>
+                    <td><input type="text" class="pizza-input" id="value" name="value" placeholder="in&#0178/$" readonly/></td>
+                    <td><input type="text" class="pizza-input" id="cost" name="cost" placeholder="$/in&#0178" readonly/></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="pizza-input" id="price" name="price" placeholder="$"/></td>
+                    <td><input type="text" class="pizza-input" id="size" name="size" placeholder="inches"/></td>
+                    <td><input type="text" class="pizza-input" id="value" name="value" placeholder="in&#0178/$" readonly/></td>
+                    <td><input type="text" class="pizza-input" id="cost" name="cost" placeholder="$/in&#0178" readonly/></td>
+                    <td id="add-row"><a href="javascript:void(0);" class="add-more"><i class="fa fa-plus-square fa-lg" aria-hidden="true"></i></a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+         </div>
+
+        <div class="col-xs-1 col-md-1"></div>
+      </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/scripts/pizzacalc.js"></script>
+  </body>
+</html>
