@@ -7,6 +7,15 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.text {
+  padding-left: 0;
+}
+
 .pizza-calc-container {
   height: 100%;
   text-align: center;
