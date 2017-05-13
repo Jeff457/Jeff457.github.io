@@ -26,7 +26,7 @@ function chainDropdownSize(pizzaChain)
       determineChainSelection();
       break;
     case 'nvm':
-      revertSizeSelection();
+      revertSizeSelection(true);
       break;
     default:
       break;
@@ -98,7 +98,8 @@ function compareChains()
              '<ul class="dropdown-menu" aria-labelledby="dropdownMenu">' + 
                '<li><a href="javascript:void(0);" id="dominos">Dominos</a></li>' + 
                '<li><a href="javascript:void(0);" id="papa">Papa Johns</a></li>' + 
-               '<li><a href="javascript:void(0);" id="hut">Pizza Hut</a></li>' + 
+               '<li><a href="javascript:void(0);" id="hut">Pizza Hut</a></li>' +
+      '<li><a href="javascript:void(0);" id="nvm">Custom</a></li>'              + 
             '</ul>' + 
           '</div></div>';
   var count = 0;
@@ -106,7 +107,7 @@ function compareChains()
      $(dropdown).attr('data-id', count).appendTo(".chain-button");
      count++;
    });
-  revertSizeSelection();
+  revertSizeSelection(true);
 }
 
 function determineChainSelection()
@@ -126,6 +127,9 @@ function determineChainSelection()
       case 'Pizza Hut':
         addHut(false, row);
         break;
+      case'Custom':
+        revertSizeSelection(false, row);
+        break;
       default:
         break;
     }
@@ -133,11 +137,14 @@ function determineChainSelection()
   });
 }
 
-function revertSizeSelection()
+function revertSizeSelection(replaceAll, row)
 {
-  $(".pizza-calc-input #size").replaceWith(
-    '<input type="text" class="pizza-input" id="size" name="size" placeholder="inches"/>'
-  );
+  var customDiv = '<input type="text" class="pizza-input" id="size" name="size" placeholder="inches"/>';
+  
+  if (replaceAll)
+    $(".pizza-calc-input #size").replaceWith(customDiv);
+  else
+    $("tr").eq(row).find("#size").replaceWith(customDiv);
 }
 
 function determineSizeSelection()
@@ -200,8 +207,32 @@ $(function() {
                 '<td><input type="text" class="pizza-input" id="cost" name="cost" placeholder="$/in&#0178" readonly/></td>' + 
                 '<td id="add-row"><a href="javascript:void(0);" class="add-more"><i class="fa fa-plus-square fa-lg" aria-hidden="true"></i></a></td>' + 
               '</tr>');
+    
+    var chain = $("#pizza-chain").text();
+    var chainID = "";
+    switch(chain)
+    {
+      case 'Dominos':
+        chainID = "dominos";
+        break;
+      case 'Papa Johns':
+        chainID = "papa";
+        break;
+      case 'Pizza Hut':
+        chainID = "hut";
+        break;
+      case 'Compare Chains':
+        chainID = "compare";
+        $(".chain-btn-row").remove();
+        break;
+      case 'Custom':
+        chainID = "nvm";
+        break;
+      default:
+        break;
+    }
+    chainDropdownSize(chainID);
   });
-  // TODO: call chainDropdownSize(dropdownID);
 });
 
 $(function() {
