@@ -73,6 +73,14 @@ p {
   margin-bottom: 1%;
 }
 
+.pizza-calc-input {
+  color: #333;
+}
+
+.fa-plus-square {
+  color: #fff;
+}
+
 .pizza-input {
   width: 125px;
   font-family: 'Raleway', sans-serif;
