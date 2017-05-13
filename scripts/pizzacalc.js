@@ -120,15 +120,19 @@ function determineChainSelection()
     {
       case 'Dominos':
         addDominos(false, row);
+        $(".chain-btn-row").css("margin-bottom", "14%");
         break;
       case 'Papa Johns':
         addPapa(false, row);
+        $(".chain-btn-row").css("margin-bottom", "14%");
         break;
       case 'Pizza Hut':
         addHut(false, row);
+        $(".chain-btn-row").css("margin-bottom", "14%");
         break;
       case'Custom':
         revertSizeSelection(false, row);
+        $(".chain-btn-row").css("margin-bottom", "5%");
         break;
       default:
         break;
